@@ -1,1 +1,56 @@
+body {
+background-color: #080f0f;
+}
+
+header {
+    padding: 20px;
+}
+
+#menu-header {
+    text-align: center;
+    overflow: hidden;
+    background-color: #A52422;
+    padding: 20px 10px;
+}
+
+a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+#header-image {
+    max-width: 42%;
+    max-height: 42%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d73f3d;
+}
+
+li {
+
+}
+
+h1 {
+    color: White;
+}
+
+#master {
+    background-color: #A4BAB7;
+}
+
+nav {
+    background-color: #d73f3d;
+}
 
