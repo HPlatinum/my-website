@@ -11,14 +11,6 @@ header {
     text-align: center;
 }
 
-a:active {
-    background-color: rgba(102, 22, 21, .5);
-}
-
-a:hover {
-    background-color: rgba(102, 22, 21, .9);
-}
-
 .menu-header {
     text-align: center;
     overflow: hidden;
@@ -52,6 +44,15 @@ a:hover {
     line-height: 25px;
     border-radius: 4px;
 }
+
+.nav-bar a:active {
+    background-color: rgba(102, 22, 21, .10);
+}
+
+.nav-bar a:hover {
+    background-color: rgba(102, 22, 21, .9);
+}
+
 
 .nav-bar li {
     display: inline;
