@@ -2,16 +2,18 @@ body {
     background-image: url("../img/backgroundG.png");
     background-color: rgba(8, 15, 15, 1);
     background-position: center;
-    background-repeat: no-repeat;
-    overflow-scrolling: auto;
+    background-repeat: repeat;
+    overflow-scrolling: inherit;
+    background-attachment: inherit;
     padding: 20px 10px;
 }
 
 header {
     text-align: center;
+    padding: 20px 10px 20px 10px;
 }
 
-.menu-header {
+.div-menu {
     text-align: center;
     overflow: hidden;
     background-color: rgba(165, 36, 34, .8);
@@ -26,37 +28,43 @@ header {
     max-height: 50%;
 }
 
-.nav-bar {
-    border-radius: 25px;
-    list-style: none;
+ul {
+    list-style-type: none;
     margin: auto;
+    overflow: hidden;
+    background-color: rgba(102, 22, 21, .8);
+    border-radius: 25px;
+    text-align: center;
+    width: 70%;
+}
+
+li {
+    display:inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 10px 15px 10px;
+}
+
+li a:hover {
+    background-color: rgba(102, 22, 21, .9);
+}
+
+#nav-bar {
+    border-radius: 25px;
     width: 30%;
     overflow: hidden;
-    background-color: rgba(102, 22, 21, .9);
+    margin: auto;
+    padding: 20px 10px 20px 10px;
 }
 
-.nav-bar a {
-    display:inline-block;
-    color: white;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 25px;
-    border-radius: 4px;
-}
-
-.nav-bar a:active {
-    background-color: rgba(102, 22, 21, .10);
-}
-
-.nav-bar a:hover {
-    background-color: rgba(102, 22, 21, .9);
-    border-radius:  5px;
-}
-
-
-.nav-bar li {
-    display: inline;
+.current-page {
+    transform: scale(1);
+    color: grey;
 }
 
 h1 {
@@ -64,7 +72,6 @@ h1 {
 }
 
 section {
-    background-color: rgba(164, 186, 183, .7);
 }
 
 .body {
@@ -76,3 +83,19 @@ nav {
     padding: 20px 10px;
 }
 
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container > div {
+    background-color: rgba(164, 186, 183, .7);
+    border: 2px rgba(8, 15, 15, 1);
+    gap: 20px;
+    width: 80%;
+    height: 1000px;
+    margin: auto;
+    text-align: center;
+    line-height: 100px;
+}
