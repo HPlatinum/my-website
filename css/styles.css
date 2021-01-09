@@ -15,8 +15,8 @@ a:active {
     background-color: rgba(102, 22, 21, .5);
 }
 
-a:hover{
-
+a:hover {
+    background-color: rgba(102, 22, 21, .9);
 }
 
 .menu-header {
