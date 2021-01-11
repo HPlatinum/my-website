@@ -5,15 +5,16 @@ body {
     background-repeat: repeat;
     overflow-scrolling: inherit;
     background-attachment: inherit;
-    padding: 20px 10px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 header {
     text-align: center;
-    padding: 20px 10px 20px 10px;
+    padding-top: 2%;
 }
 
-.div-menu {
+.header-outline {
     text-align: center;
     overflow: hidden;
     background-color: rgba(165, 36, 34, .8);
@@ -28,61 +29,89 @@ header {
     max-height: 50%;
 }
 
-ul {
-    list-style-type: none;
-    margin: auto;
-    overflow: hidden;
-    background-color: rgba(102, 22, 21, .8);
-    border-radius: 25px;
-    text-align: center;
-    width: 70%;
-}
-
-li {
-    display:inline-block;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 15px 10px 15px 10px;
-}
-
 li a:hover {
     background-color: rgba(102, 22, 21, .9);
 }
 
 #nav-bar {
-    border-radius: 25px;
-    width: 30%;
-    overflow: hidden;
-    margin: auto;
-    padding: 20px 10px 20px 10px;
+    padding: .8%;
+    text-align: center;
 }
 
-.current-page {
+#nav-bar ul{
+    background-color: rgba(102, 22, 21, .8);
+    border-radius: 25px;
+    width: 70%;
+    margin: auto;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+}
+
+#nav-bar li {
+    float: left;
+}
+
+#nav-bar li a {
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+}
+
+#nav-bar li a.current-page {
     transform: scale(1);
     color: grey;
 }
 
-h1 {
-    color: White;
+#nav-bar li.contact-button {
+    float: right;
 }
 
-section {
-}
-
-.body {
-    max-width: 80%;
+#top-bar {
 
 }
 
-nav {
-    padding: 20px 10px;
+#top-bar button {
+    background-color: rgba(102, 22, 21, 1);
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 10px 10px;
 }
 
+#top-bar ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgba(8, 15, 15, 1);
+    padding-inline-start: 0;
+}
+
+#top-bar li {
+    float: left;
+}
+
+#top-bar li.login {
+    float: right;
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#top-bar p {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
 
 .flex-container {
     display: flex;
